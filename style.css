@@ -1,8 +1,192 @@
 * {
-
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
 }
 
-:root{
+:root {
+  --primary-color: #466f25;
+  --secondary-color: #4088b8;
+  --primary-font: Verdana, Geneva, Tahoma, sans-serif;
+  --secondary-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+}
 
-    
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 90px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+section {
+  padding: 30px;
+}
+
+main {
+  background-image: url("./assets/img/grass_theme2.jpg");
+  background-size: contain;
+}
+
+#inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("./assets/img/hitGolf.png");
+  background-size: 60px;
+  background-size: cover;
+  height: 100vh;
+}
+
+.inicio-imagen img {
+  width: 500px;
+  border-radius: 50px;
+}
+
+
+.inicio-descripcion h1 {
+  font-size: 50px;
+  padding: 30px;
+}
+
+.inicio-descripcion p {
+  font-family: var(--secondary-font);
+  font-size: 25px;
+  color: grey;
+  padding: 20px;
+  margin-right: 400px;
+  text-align: justify;
+}
+
+#categorias,
+#torneos,
+#contacto {
+  text-align: center;
+  padding: 20px;
+  min-height: 50vh;
+}
+
+#categorias h2,
+#torneos h2,
+#contacto h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#categorias .container-grid-categorias,
+#torneos .container-grid-torneos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 40px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+#categorias .card-categoria,
+#torneos .card-torneo{
+  padding: 20px;
+  border: 1px solid rgb(230, 230, 230);
+  box-shadow: 6px 5px 45px -15px rgba(155, 150, 150, 0.75);
+  border-radius: 10px;
+  transition: 0.3s transform;
+}
+
+form {
+  width: 20%;
+  margin: auto;
+}
+
+form * {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+}
+
+form input,
+textarea {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+form button {
+  background-color: var(--primary-color); /* Green */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100px;
+}
+
+form button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  size: 5px;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+@media (max-width: 880px) {
+  #inicio {
+    flex-direction:column;
+  }
+
+  .inicio-descripcion p {
+    margin-right: 0px;
+  }
+
+  #categorias .container-grid-categorias {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #torneos .container-grid-torneos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  #categorias .container-grid-categorias {
+    grid-template-columns: 1fr;
+  }
+
+  #torneos .container-grid-torneos {
+    grid-template-columns: 1fr;
+  }
 }
