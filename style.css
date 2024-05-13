@@ -266,7 +266,7 @@ footer p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   #categorias .container-grid-categorias {
     grid-template-columns: 1fr;
   }
