@@ -5,8 +5,11 @@
 }
 
 :root {
-  --primary-color: #466f25;
-  --secondary-color: #4088b8;
+  --primary-color: #4A5915;
+  --secondary-color: #4EBFD9;
+  --third-color: #D9C359;
+  --forth-color: #A2A632;
+  --fifth-color: #A66832;
   --primary-font: Verdana, Geneva, Tahoma, sans-serif;
   --secondary-font: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode";
@@ -109,9 +112,12 @@ main {
 
 #torneos img{
 border-radius: 15px;
-height: 150px;
-
+height: 200px;
 }
+
+#categorias img{
+  height: 200px;
+  }
 
 #categorias .card-categoria:hover,
 #torneos .card-torneo:hover {
@@ -126,7 +132,7 @@ height: 150px;
   width: 50%;
   margin: 10px auto;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--third-color);
   opacity: 0.8;
   cursor: pointer;
   width: 100px;
@@ -164,7 +170,7 @@ textarea {
 form button {
   background-color: var(--primary-color); /* Green */
   border: none;
-  color: white;
+  color: var(--third-color);
   padding: 10px 24px;
   text-align: center;
   text-decoration: none;
