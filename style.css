@@ -98,16 +98,19 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding: 40px;
-  border: 1px solid rgb(230, 230, 230);
 }
 
 #categorias .card-categoria,
 #torneos .card-torneo{
   padding: 20px;
-  border: 1px solid rgb(230, 230, 230);
-  box-shadow: 6px 5px 45px -15px rgba(155, 150, 150, 0.75);
   border-radius: 10px;
   transition: 0.3s transform;
+}
+
+#torneos img{
+border-radius: 15px;
+height: 150px;
+
 }
 
 #categorias .card-categoria:hover,
