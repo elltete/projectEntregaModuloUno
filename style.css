@@ -69,6 +69,7 @@ main {
 .inicio-descripcion h1 {
   font-size: 50px;
   padding: 30px;
+  font-family: var(--primary-font);
 }
 
 .inicio-descripcion p {
@@ -93,6 +94,7 @@ main {
 #contacto h2 {
   text-align: center;
   font-size: 30px;
+  font-family: var(--primary-font);
 }
 
 #categorias .container-grid-categorias,
